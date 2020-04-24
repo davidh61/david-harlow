@@ -6,5 +6,18 @@
 
 module.exports = {
   siteName: 'Hello',
-  plugins: []
-}
+
+  transformers: {
+    remark: {}
+  },
+
+  plugins: [
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "blog/**/*.md",
+        typeName: "Post"
+      }
+    }
+  ]
+};
