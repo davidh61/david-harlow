@@ -17,11 +17,33 @@
       <a href="https://davidharlow.dev/" target="_blank" rel="noopener">Old Site</a>
     </p>
 
+      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+
+
   </Layout>
 </template>
 
+
+<page-query>
+query Home ($page: Int) {
+        posts: allPost (page: $page)  {
+            edges {
+                node {
+                    title
+                    path
+                    }
+                }
+        }
+    }
+</page-query>
+
 <script>
+import PostCard from '~/components/PostCard.vue'
+
 export default {
+  components: {
+    PostCard
+  },
   metaInfo: {
     title: 'David Harlow'
   }
