@@ -23,8 +23,8 @@ query Home ($page: Int) {
         posts: allPost (page: $page)  {
             edges {
                 node {
-                    title
-                    path
+                      title
+                      path
                     }
                 }
         }
@@ -48,17 +48,11 @@ export default {
 
 .contents {
 
-
   .me {
-      padding: 10px;
       // border-color:black;
       // border-style: solid;
       background-color:rgba(255, 255, 255, 0.5);
 
   }
-}
-
-.home-links a {
-  margin-right: 1rem;
 }
 </style>
