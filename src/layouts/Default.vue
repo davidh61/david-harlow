@@ -1,9 +1,13 @@
 <template>
   <div class="layout">
     <header class="header">
-      <g-image alt="Example image" src="~/favicon.png" width="135" />
+      <!-- https://github.com/gridsome/gridsome/pull/758 -->
 
-      <h1>Hello World</h1>
+      <div class="image-container">
+        <img alt="Example image" src="/me.jpg" width="300" />
+      </div>
+
+      <h1>David Harlow</h1>
 
       <nav class="nav">
         <a class="nav__link" href="https://www.instagram.com/dave_harlow/">
@@ -38,6 +42,21 @@ query {
 </static-query>
 
 <style lang="scss">
+.image-container {
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  border-style: double;
+  border: 1;
+  display: inline-block;
+
+  img {
+    margin: -70px -90px;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -50,7 +69,7 @@ body {
   max-width: 760px;
   margin: 0 auto;
   padding-left: 20px;
-  padding-right: 20px;
+  flex: 1;
 }
 
 .content {
@@ -58,13 +77,21 @@ body {
 }
 .header {
   flex: 30%;
+
   text-align: center;
-  padding-right: 20px;
+  align-items: center;
 }
 
 @media screen and (max-width: 1000px) {
   .layout {
     display: block;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  .header {
+    padding-right: 30px;
   }
 }
 

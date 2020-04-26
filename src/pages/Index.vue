@@ -1,24 +1,18 @@
 <template>
   <Layout>
-
+    <div class="contents">
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
+    <div class="me">
+    <p>David is a software developer, attendee of gigs, amateur football kit collector and all round top guy 👍 
+      He's built this site as somewhere to post about tech, places I go, music I listen to and other stuff you're probably not interested by.
+      Click <a href="/about">here</a> to learn some more about myself, or check out some of my posts below.
+      </p>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://davidharlow.dev/" target="_blank" rel="noopener">Old Site</a>
-    </p>
+    </div>
 
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
 
+    </div>
 
   </Layout>
 </template>
@@ -50,7 +44,20 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+
+.contents {
+
+
+  .me {
+      padding: 10px;
+      // border-color:black;
+      // border-style: solid;
+      background-color:rgba(255, 255, 255, 0.5);
+
+  }
+}
+
 .home-links a {
   margin-right: 1rem;
 }
