@@ -49,6 +49,10 @@ export default {
 .contents {
 
   .me {
+    font-size: 20px;
+  }
+
+  div {
       // border-color:black;
       // border-style: solid;
       background-color:rgba(255, 255, 255, 0.5);
