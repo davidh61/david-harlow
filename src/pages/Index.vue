@@ -24,7 +24,10 @@ query Home ($page: Int) {
             edges {
                 node {
                       title
+                      date
+                      description
                       path
+                      image
                     }
                 }
         }

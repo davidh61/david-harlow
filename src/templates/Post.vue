@@ -1,5 +1,7 @@
 <template>
   <Layout>
+    <p v-html="$page.post.date"/>
+
     <div v-html="$page.post.content"/>
   </Layout>
 </template>
@@ -8,6 +10,9 @@
 query Post ($path: String!) {
   post: post (path: $path) {
     title
+    date
+    description
+    image
     content
   }
 }
@@ -17,7 +22,10 @@ query Post ($path: String!) {
 export default {
   metaInfo() {
     return {
-      title: this.$page.post.title
+      title: this.$page.post.title,
+      date: this.$page.date,
+      description: this.$page.description,
+      image: this.$page.image
     }
   },
   props: ['post'],
