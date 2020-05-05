@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <header class="header">
+    <header>
       <!-- https://github.com/gridsome/gridsome/pull/758 -->
 
       <div class="image-container">
@@ -27,9 +27,9 @@
         </a>
       </nav>
     </header>
-    <div class="content">
+    <main>
       <slot />
-    </div>
+    </main>
   </div>
 </template>
 
@@ -54,14 +54,14 @@ body {
     padding: 20px;
     flex: 1;
 
-    .header {
+    header {
+      padding-top: 20px;
       flex: 30%;
-
       text-align: center;
       align-items: center;
 
       .image-container {
-        background-color:white;
+        background-color: white;
         text-align: center;
         height: 140px;
         width: 140px;
@@ -75,7 +75,9 @@ body {
           margin: 10px -90px;
         }
       }
-
+      h1 {
+        margin: 10px;
+      }
       .nav__link {
         margin-left: 20px;
 
@@ -91,7 +93,7 @@ body {
       }
     }
 
-    .content {
+    main {
       flex: 70%;
     }
   }
@@ -107,7 +109,7 @@ body {
   .layout {
     display: flex;
   }
-  .header {
+  header {
     padding-right: 30px;
   }
 }

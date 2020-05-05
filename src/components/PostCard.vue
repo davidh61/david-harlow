@@ -1,13 +1,8 @@
 <template>
   <div class="post-card">
-    <!-- <h2 class="post-card__title" v-html="post.title" /> -->
-    <img class="post-card__image" :src="post.image" width="225" />
-    <span class="post-card__info">
-      <g-link class="post-card__link" :to="post.path">{{post.title}}</g-link>
-      <p class="post-card__date" v-html="post.date"></p>
-    </span>
-    <p v-html="post.description"></p>
-    <hr />
+    <p class="post-card__date" v-html="post.date"></p>
+    <g-link class="post-card__link" :to="post.path">{{post.title}}</g-link>
+    <p class="post-card__description" v-html="post.description"></p>
   </div>
 </template>
 
@@ -19,36 +14,30 @@ export default {
 
 <style lang="scss">
 .post-card {
-  &__info {
-    color:black;
 
-    &:active {
-    color:black;
-    }
-
-    &:hover {
-      border-bottom: 2px;
-      border-color: #49f740;
-      border-bottom-style: solid;
-    }
-  }
-
-  &__image {
-    display: none;
-  }
+  margin-bottom: 40px;
 
   &__link {
-    text-decoration: none;
-    font-size: 25px;
+    font-size: 22px;
+    color: black;
 
     &:hover {
+      background-color:black;
+      color: #4cffba;
+      cursor: pointer;
     }
   }
 
   &__date {
-    padding: 5px;
-    display: inline;
+    margin: 2px;
     font-size: 12px;
+    color: #5a5a5a;
+  }
+
+  &__description {
+    color: #5a5a5a;
+    font-size: 15px;
+    margin-top: 5px;
   }
 }
 </style>

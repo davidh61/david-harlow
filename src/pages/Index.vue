@@ -1,19 +1,20 @@
 <template>
   <Layout>
     <div class="contents">
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <div class="me">
-    <p>David is a software developer, attendee of gigs, amateur football kit collector and all round top guy 👍 
-      He's built this site as somewhere to post about tech, places I go, music I listen to and other stuff you're probably not interested by.
-      Click <a href="/about">here</a> to learn some more about myself, or check out some of my posts below.
-      </p>
+      <!-- Learn how to use images here: https://gridsome.org/docs/images -->
+      <div class="contents__me">
+        <p>
+          I'm David, a software developer from London 👋
+          I've built this site as a playground to try out new things out and write about nonsense.
+          Click
+          <a
+            href="/about/"
+          >here</a> if you'd like to see more, or alternatively check out my thoughts below.
+        </p>
+      </div>
 
+      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
     </div>
-
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
-
-    </div>
-
   </Layout>
 </template>
 
@@ -35,31 +36,37 @@ query Home ($page: Int) {
 </page-query>
 
 <script>
-import PostCard from '~/components/PostCard.vue'
+import PostCard from "~/components/PostCard.vue";
 
 export default {
   components: {
     PostCard
   },
   metaInfo: {
-    title: 'David Harlow'
+    title: "David Harlow"
   }
-}
+};
 </script>
 
 <style lang="scss">
-
 .contents {
-
-  .me {
+  &__me {
     font-size: 20px;
+    margin-bottom: 40px;
+
+    a {
+      font-size: 22px;
+      color: black;
+
+      &:hover {
+        background-color: black;
+        color: #4cffba;
+        cursor: pointer;
+      }
+    }
   }
-
   div {
-      // border-color:black;
-      // border-style: solid;
-      background-color:rgba(255, 255, 255, 0.5);
-
+    background-color: rgba(255, 255, 255, 0.5);
   }
 }
 </style>

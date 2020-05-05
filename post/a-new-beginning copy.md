@@ -1,8 +1,7 @@
 ---
-title: A new beginning
-date: March 9th, 2019
-description: So how did I actually manage to build this?
-image: /a-new-beginning.jpg
+title: This is a different title
+date: APR 29, 2020
+description: Samuel Harlow loves FIFA so much
 ---
 
 # An awesome article
