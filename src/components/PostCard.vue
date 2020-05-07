@@ -14,15 +14,16 @@ export default {
 
 <style lang="scss">
 .post-card {
-
   margin-bottom: 40px;
 
   &__link {
     font-size: 22px;
+    text-decoration: none;
     color: black;
+    border-bottom: 1px black dashed;
 
     &:hover {
-      background-color:black;
+      background-color: black;
       color: #4cffba;
       cursor: pointer;
     }

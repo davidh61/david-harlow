@@ -57,6 +57,8 @@ export default {
     a {
       font-size: 22px;
       color: black;
+      text-decoration: none;
+      border-bottom: 1px black dashed;
 
       &:hover {
         background-color: black;
@@ -66,7 +68,7 @@ export default {
     }
   }
   div {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
   }
 }
 </style>

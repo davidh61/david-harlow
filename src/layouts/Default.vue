@@ -7,7 +7,7 @@
         <img alt="Example image" src="/me-me.jpeg" width="200" />
       </div>
 
-      <h1>David Harlow</h1>
+      <h1>davidharlow</h1>
 
       <nav class="nav">
         <a class="nav__link" href="https://www.instagram.com/dave_harlow/">
@@ -67,8 +67,7 @@ body {
         width: 140px;
         overflow: hidden;
         border-radius: 50%;
-        border-style: solid;
-        border: 1;
+        border: 4px solid black;
         display: inline-block;
 
         img {
@@ -76,19 +75,28 @@ body {
         }
       }
       h1 {
+        text-shadow: 2px 2px #4cffba;
+        color: #000000; 
         margin: 10px;
       }
       .nav__link {
-        margin-left: 20px;
+        color: black;
 
+        &:nth-child(2) {
+          margin: 10px;
+        }
         svg {
-          width: 24px;
-          height: 24px;
+          width: 18px;
+          height: 18px;
           stroke: currentColor;
           stroke-width: 2;
           stroke-linecap: round;
           stroke-linejoin: round;
           fill: none;
+        }
+        &:hover {
+          color: #4cffba;
+          cursor: pointer;
         }
       }
     }
