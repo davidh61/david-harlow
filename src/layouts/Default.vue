@@ -3,12 +3,12 @@
     <header>
       <!-- https://github.com/gridsome/gridsome/pull/758 -->
 
-      <div class="image-container">
+      <a href="/" class="image-container">
         <img alt="Example image" src="/me-me.jpeg" width="200" />
-      </div>
+      </a>
 
       <h1>davidharlow</h1>
-
+  
       <nav class="nav">
         <a class="nav__link" href="https://www.instagram.com/dave_harlow/">
           <svg>
@@ -69,6 +69,12 @@ body {
         border-radius: 50%;
         border: 4px solid black;
         display: inline-block;
+        box-shadow: 2px black;
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 0 20px #4cffba;
+        }
 
         img {
           margin: 10px -90px;
@@ -76,7 +82,7 @@ body {
       }
       h1 {
         text-shadow: 2px 2px #4cffba;
-        color: #000000; 
+        color: #000000;
         margin: 10px;
       }
       .nav__link {
@@ -103,6 +109,17 @@ body {
 
     main {
       flex: 70%;
+      a {
+        text-decoration: none;
+        color: black;
+        border-bottom: 1px black dashed;
+
+        &:hover {
+          background-color: black;
+          color: #4cffba;
+          cursor: pointer;
+        }
+      }
     }
   }
 }

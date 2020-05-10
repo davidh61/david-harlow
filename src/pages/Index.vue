@@ -6,13 +6,9 @@
         <p>
           I'm David, a software developer from London 👋
           I've built this site as a playground to try out new things out and write about nonsense.
-          Click
-          <a
-            href="/about/"
-          >here</a> if you'd like to see more, or alternatively check out my thoughts below.
+          Click <a href="/about/">here</a> if you'd like to see more, or alternatively check out my thoughts below.
         </p>
       </div>
-
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
     </div>
   </Layout>
@@ -51,11 +47,10 @@ export default {
 <style lang="scss">
 .contents {
   &__me {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 40px;
 
     a {
-      font-size: 22px;
       color: black;
       text-decoration: none;
       border-bottom: 1px black dashed;
