@@ -6,7 +6,10 @@
         <p>
           I'm David, a software developer from London 👋
           I've built this site as a playground to try out new things out and write about nonsense.
-          Click <a href="/about/">here</a> if you'd like to see more, or alternatively check out my thoughts below.
+          Click
+          <a
+            href="/about/"
+          >here</a> if you'd like to see more, or alternatively check out my thoughts below.
         </p>
       </div>
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
@@ -64,6 +67,16 @@ export default {
   }
   div {
     background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .contents {
+    color: white;
+    div {
+      background-color: rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 20px black;
+    }
   }
 }
 </style>

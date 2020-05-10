@@ -8,7 +8,7 @@
       </a>
 
       <h1>davidharlow</h1>
-  
+
       <nav class="nav">
         <a class="nav__link" href="https://www.instagram.com/dave_harlow/">
           <svg>
@@ -136,6 +136,32 @@ body {
   }
   header {
     padding-right: 30px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    .layout {
+      header {
+        h1 {
+          color: white;
+          text-shadow: none;
+        }
+        .nav__link {
+          color: white;
+        }
+      }
+      main {
+        a {
+          color: white;
+        border-bottom: 1px white dashed;
+          
+          &:hover {
+            background-color:none;
+          }
+        }
+      }
+    }
   }
 }
 </style>

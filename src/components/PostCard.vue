@@ -32,4 +32,19 @@ export default {
     margin-top: 5px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .post-card {
+    color: white;
+      &__date {
+        color:white;
+      }
+      &__link {
+      color:white;
+      }
+      &__description {
+        color:white;
+      }
+  }
+}
 </style>
