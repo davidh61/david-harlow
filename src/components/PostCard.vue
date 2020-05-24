@@ -23,28 +23,35 @@ export default {
   &__date {
     margin: 2px;
     font-size: 12px;
-    color: #5a5a5a;
   }
 
   &__description {
-    color: #5a5a5a;
     font-size: 15px;
     margin-top: 5px;
   }
 }
 
-@media (prefers-color-scheme: dark) {
+[data-theme="light"] {
   .post-card {
-    color: white;
-      &__date {
-        color:white;
-      }
-      &__link {
-      color:white;
-      }
-      &__description {
-        color:white;
-      }
+    &__link {
+      color: black;
+    }
+    &__date,
+    &__description {
+      color: #5a5a5a;
+    }
+  }
+}
+
+[data-theme="dark"] {
+  .post-card {
+    &__link {
+      color: white;
+    }
+    &__date,
+    &__description {
+      color: #c9c9c9;
+    }
   }
 }
 </style>
