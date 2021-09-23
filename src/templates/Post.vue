@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <p v-html="$page.post.date"/>
+    <p v-html="$page.post.date" />
 
-    <div v-html="$page.post.content"/>
+    <article v-html="$page.post.content" />
   </Layout>
 </template>
 
@@ -26,8 +26,25 @@ export default {
       date: this.$page.date,
       description: this.$page.description,
       image: this.$page.image
-    }
+    };
   },
-  props: ['post'],
+  props: ['post']
 };
 </script>
+
+<style lang="scss">
+[data-theme='light'] {
+  article {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px white;
+  }
+}
+
+[data-theme='dark'] {
+  article {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 120px rgba(0, 0, 0, 0.8);
+  }
+}
+
+</style>

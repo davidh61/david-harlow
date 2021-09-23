@@ -1,22 +1,24 @@
 <template>
   <Layout>
     <div class="contents">
-      <!-- Learn how to use images here: https://gridsome.org/docs/images -->
       <div class="contents__me">
         <p>
-          I'm David, a software developer from London 👋
-          I've built this site as a playground to try out new things out and write about nonsense.
-          Click
-          <a
-            href="/about/"
-          >here</a> if you'd like to see more, or alternatively check out my thoughts below.
+          <strong>I'm David, a software developer from London 👋</strong>
+          I've built this site as a playground to try out new things out and
+          write about nonsense. Click
+          <a href="/about/">here</a>
+          if you'd like to see more, or alternatively check out my thoughts
+          below.
         </p>
       </div>
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
+      <PostCard
+        v-for="edge in $page.posts.edges"
+        :key="edge.node.id"
+        :post="edge.node"
+      />
     </div>
   </Layout>
 </template>
-
 
 <page-query>
 query Home ($page: Int) {
@@ -35,14 +37,14 @@ query Home ($page: Int) {
 </page-query>
 
 <script>
-import PostCard from "~/components/PostCard.vue";
+import PostCard from '~/components/PostCard.vue';
 
 export default {
   components: {
     PostCard
   },
   metaInfo: {
-    title: "David Harlow"
+    title: 'David Harlow'
   }
 };
 </script>
@@ -50,7 +52,7 @@ export default {
 <style lang="scss">
 .contents {
   &__me {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 40px;
 
     a {
@@ -70,7 +72,7 @@ export default {
   }
 }
 
-[data-theme="light"] {
+[data-theme='light'] {
   .contents {
     color: black;
     div {
@@ -80,12 +82,12 @@ export default {
   }
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   .contents {
     color: white;
     div {
       background-color: rgba(0, 0, 0, 0.3);
-      box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+      box-shadow: 0 0 120px rgba(0, 0, 0, 0.8);
     }
   }
 }

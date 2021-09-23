@@ -1,14 +1,14 @@
 <template>
   <div class="post-card">
     <p class="post-card__date" v-html="post.date"></p>
-    <g-link class="post-card__link" :to="post.path">{{post.title}}</g-link>
+    <g-link class="post-card__link" :to="post.path">{{ post.title }}</g-link>
     <p class="post-card__description" v-html="post.description"></p>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["post"]
+  props: ['post']
 };
 </script>
 
@@ -18,6 +18,7 @@ export default {
 
   &__link {
     font-size: 20px;
+    font-weight: 575;
   }
 
   &__date {
@@ -31,7 +32,7 @@ export default {
   }
 }
 
-[data-theme="light"] {
+[data-theme='light'] {
   .post-card {
     &__link {
       color: black;
@@ -43,7 +44,7 @@ export default {
   }
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   .post-card {
     &__link {
       color: white;

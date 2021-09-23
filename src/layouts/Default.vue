@@ -79,7 +79,7 @@ body {
     }
 
     h1 {
-      text-shadow: 2px 2px #4cffba;
+      text-shadow: 4px 4px #4cffba;
       color: #000000;
     }
     h2 {
@@ -112,8 +112,8 @@ body {
     }
 
     h1 {
-      color: white;
-      text-shadow: none;
+      color: #4cffba;
+      text-shadow: 4px 4px black;
       transition: color 0.25s linear;
     }
 
@@ -163,8 +163,8 @@ body {
           margin: 10px;
         }
         svg {
-          width: 18px;
-          height: 18px;
+          width: 22px;
+          height: 22px;
           stroke: currentColor;
           stroke-width: 2;
           stroke-linecap: round;
