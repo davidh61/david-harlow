@@ -2,13 +2,14 @@
   <Layout>
     <div class="contents">
       <div class="contents__me">
+        <h2>I'm David, a software developer from London 👋</h2>
         <p>
-          <strong>I'm David, a software developer from London 👋</strong>
-          I've built this site as a playground to try out new things out and
-          write about nonsense. Click
-          <a href="/about/">here</a>
-          if you'd like to see more, or alternatively check out my thoughts
-          below.
+          I build things for the internet, including this site which is
+          primarily an area for me to try out new shit and maybe write about
+          some things (but probably not).
+          <br />
+          <br />
+          The post below explains a little more I guess..
         </p>
       </div>
       <PostCard
