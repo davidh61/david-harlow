@@ -1,9 +1,9 @@
 <template>
-  <div class="post-card">
+  <g-link class="post-card__link" :to="post.path"> 
     <p class="post-card__date" v-html="post.date"></p>
-    <g-link class="post-card__link" :to="post.path">{{ post.title }}</g-link>
+    {{ post.title }}
     <p class="post-card__description" v-html="post.description"></p>
-  </div>
+  </g-link>
 </template>
 
 <script>

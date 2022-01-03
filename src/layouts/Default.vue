@@ -10,17 +10,17 @@
       <h1>davidharlow</h1>
 
       <nav class="nav">
-        <a class="nav__link" href="https://www.instagram.com/dave_harlow/">
+        <a class="nav__link" target="blank" href="https://www.instagram.com/dave_harlow/">
           <svg>
             <use xlink:href="/feather-sprite.svg#instagram" />
           </svg>
         </a>
-        <a class="nav__link" href="https://www.linkedin.com/in/harlowdavid/">
+        <a class="nav__link" target="blank" href="https://www.linkedin.com/in/harlowdavid/">
           <svg>
             <use xlink:href="/feather-sprite.svg#linkedin" />
           </svg>
         </a>
-        <a class="nav__link" href="mailto:davidh_95@hotmail.com?subject=Hey%20David!">
+        <a class="nav__link" target="blank" href="mailto:davidh_95@hotmail.com?subject=Hey%20David!">
           <svg>
             <use xlink:href="/feather-sprite.svg#mail" />
           </svg>
