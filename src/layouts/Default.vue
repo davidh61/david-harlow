@@ -4,7 +4,7 @@
       <!-- https://github.com/gridsome/gridsome/pull/758 -->
 
       <a href="/" class="image-container">
-        <img alt="Example image" src="/me-me.jpeg" width="200" />
+        <g-image alt="Example image" src="~/assets/images/me-me.jpeg" width="200" />
       </a>
 
       <h1>davidharlow</h1>
