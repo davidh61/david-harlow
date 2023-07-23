@@ -1,4 +1,3 @@
-
 <template>
   <button
     role="button"
@@ -7,10 +6,10 @@
     class="toggle-theme"
   >
     <svg v-if="darkTheme">
-      <use xlink:href="@/feather-sprite.svg#moon" />
+      <use xlink:href="../assets/feather-sprite.svg#moon" />
     </svg>
     <svg v-else>
-      <use xlink:href="@/feather-sprite.svg#sun" />
+      <use xlink:href="../assets/feather-sprite.svg#sun" />
     </svg>
   </button>
 </template>
@@ -19,6 +18,8 @@
 export default {
   data() {
     return {
+      svgPathSun: '~/assets/feather-sprite.svg#sun',
+      svgPathMoon: '~/assets/feather-sprite.svg#moon',
       darkTheme: false
     };
   },
@@ -37,7 +38,6 @@ export default {
 
 <style lang="scss">
 .toggle-theme {
-
   background: none;
   border: none;
   cursor: pointer;
@@ -54,7 +54,6 @@ export default {
 }
 
 [data-theme="dark"] {
-
   .toggle-theme {
     svg {
       color: white;
@@ -62,7 +61,7 @@ export default {
       &:hover {
         color: #4cffba;
         cursor: pointer;
-            filter: drop-shadow(0px 0px 6px #4cffba)
+        filter: drop-shadow(0px 0px 6px #4cffba);
       }
     }
   }
