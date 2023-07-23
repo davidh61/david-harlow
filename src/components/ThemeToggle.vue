@@ -7,10 +7,10 @@
     class="toggle-theme"
   >
     <svg v-if="darkTheme">
-      <use xlink:href="/feather-sprite.svg#moon" />
+      <use xlink:href="@/feather-sprite.svg#moon" />
     </svg>
     <svg v-else>
-      <use xlink:href="/feather-sprite.svg#sun" />
+      <use xlink:href="@/feather-sprite.svg#sun" />
     </svg>
   </button>
 </template>
