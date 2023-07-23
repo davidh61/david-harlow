@@ -7,6 +7,9 @@
 module.exports = {
   siteName: 'Hello',
 
+  siteUrl: 'https://davidh61.github.io',
+  pathPrefix: '/david-harlow',
+
   transformers: {
     remark: {}
   },

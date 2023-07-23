@@ -4,10 +4,13 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "feather-icons": "^4.28.0",
+    "feather-icons": "^4.29.0",
+    "gh-pages": "^5.0.0",
     "gridsome": "^0.7.23"
   },
   "devDependencies": {
