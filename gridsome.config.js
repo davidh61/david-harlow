@@ -7,7 +7,7 @@
 module.exports = {
   siteName: 'Hello',
 
-  siteUrl: 'https://davidharlow.dev',
+  siteUrl: 'https://www.davidharlow.dev',
 
   transformers: {
     remark: {}
