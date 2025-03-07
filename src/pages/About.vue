@@ -34,7 +34,7 @@
         back to London I started working for this
         <a href="https://thetin.net">super cool agency</a>
         where we develop on a range of different technologies and platforms.
-        I now collect my salary from this <a href="https://www.thetrainline.com/">company</a> you may have heard of 🚝🚝
+        I now collect my salary from this <a href="https://www.thetrainline.com/">company</a> you may have heard of 🚝🚝🚝
       </p>
     </section>
   </Layout>
